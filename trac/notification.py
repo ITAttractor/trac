@@ -310,7 +310,7 @@ class NotifyEmail(Notify):
                 self.email_map[username] = email
 
     def _init_pref_encoding(self):
-        from email.Charset import Charset, QP, BASE64, SHORTEST
+        from email.charset import Charset, QP, BASE64, SHORTEST
         self._charset = Charset()
         self._charset.input_charset = 'utf-8'
         self._charset.output_charset = 'utf-8'
